@@ -50,7 +50,7 @@ bound_map = {
 ALGORITHM_NAME = 'meoh'  # Could also be 'meoh', 'nsga2', 'mpage', 'moead'
 PROBLEM_NAME = "bi_kp"  # Could also be 'bi_kp', 'bi_cvrp'
 exact_log_dir_name = "v30"  # must be unique for each run
-api_key = os.getenv('API_KEY3')  # change APIKEY1, APIKEY2, APIKEY3
+API_KEY = os.getenv("MISTRAL_API_KEY")   # change APIKEY1, APIKEY2, APIKEY3
 
 # ------------------------
 # Main execution
@@ -63,7 +63,7 @@ if __name__ == '__main__':
     LOWER_BOUND, UPPER_BOUND = bound_map[PROBLEM_NAME]  # ✅ Auto-select bounds
 
     llm = MistralApi(
-        keys="",
+        keys=API_KEY,
         model='codestral-latest',
         timeout=60
     )
