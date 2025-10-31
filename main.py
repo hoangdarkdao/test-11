@@ -47,7 +47,7 @@ bound_map = {
 # ------------------------
 # User configuration
 # ------------------------
-ALGORITHM_NAME = 'mpage'  # Could also be 'meoh', 'nsga2', 'mpage', 'moead'
+ALGORITHM_NAME = 'moead'  # Could also be 'meoh', 'nsga2', 'mpage', 'moead'
 PROBLEM_NAME = "bi_kp"  # Could also be 'bi_kp', 'bi_cvrp'
 exact_log_dir_name = "v30"  # must be unique for each run
 API_KEY = os.getenv("MISTRAL_API_KEY")   # change APIKEY1, APIKEY2, APIKEY3
